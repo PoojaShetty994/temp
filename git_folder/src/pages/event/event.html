@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color="amazon1">
+    <ion-title>add event</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="container">
+  <ion-item>
+            <ion-label stacked>Name:</ion-label>
+            <ion-input type="text" [(ngModel)]="name" value="name"></ion-input>
+  </ion-item>
+  <ion-item>
+            <ion-label stacked>Time:</ion-label>
+            <ion-input type="number" [(ngModel)]="time" value="time"></ion-input>
+  </ion-item>
+  <ion-item>
+            <ion-label stacked>Deparrtment:</ion-label>
+            <ion-input type="text" [(ngModel)]="dept" value="dept"></ion-input>
+  </ion-item>
+<!-- <ion-item>
+            <ion-label stacked>Latitude :</ion-label>
+            <ion-input type="number" [(ngModel)]="lat" value="lat"></ion-input>
+</ion-item>
+  <ion-item>
+            <ion-label stacked>Longitude :</ion-label>
+            <ion-input type="number" [(ngModel)]="long" value="long"></ion-input>
+  </ion-item>
+  <ion-item>
+            <ion-label stacked>Radius :</ion-label>
+            <ion-input type="number" [(ngModel)]="radius" value="radius"></ion-input>
+  </ion-item>-->
+    <div id="map" style="height: 200px"></div>
+
+<!-- <div id="map" style="height: 600px"></div>
+  <button ion-button block tappable (click)="takegeo()">Show map</button>
+
+-->
+ <button ion-button block tappable (click)="btn_click()" >Add Geofence</button>
+
+
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="amazon1">
+    <ion-title>Adding Invities</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="container">
+<ion-card>
+  <ion-card-header>
+    List of events
+  </ion-card-header>
+  <ion-card-content>
+  <ion-list>
+
+  <ion-item>
+    <ion-label>Meeting</ion-label>
+    <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Project Submission</ion-label>
+    <ion-checkbox [(ngModel)]="mushrooms"></ion-checkbox>
+  </ion-item>
+
+</ion-list>
+</ion-card-content>
+</ion-card><br/><br/><br/>
+<ion-card>
+  <ion-card-header>
+    List of department
+  </ion-card-header>
+  <ion-card-content>
+  <ion-list>
+  <ion-item>
+    <ion-label>Marketing</ion-label>
+    <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+  </ion-item>
+<ion-item>
+    <ion-label>Testing</ion-label>
+    <ion-checkbox [(ngModel)]="mushrooms"></ion-checkbox>
+  </ion-item>
+</ion-list>
+</ion-card-content>
+</ion-card>
+<button ion-button id="events" (click)="addevent()">Set Invities</button><br/><br/><br/><br/>
+</ion-content>

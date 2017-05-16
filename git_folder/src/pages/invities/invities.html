@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="amazon1">
+    <ion-title>Adding Invities</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="container">
+
+  <ion-item>
+            <ion-label stacked>Name</ion-label>
+            <ion-input type="text" [(ngModel)]="name" value="name"></ion-input>
+  </ion-item>
+  <ion-item>
+            <ion-label stacked>Designation</ion-label>
+            <ion-input type="text" [(ngModel)]="design" value="design"></ion-input>
+  </ion-item>
+
+<button ion-button id="create" (click)="export()">Send</button>
+
+  </ion-content>

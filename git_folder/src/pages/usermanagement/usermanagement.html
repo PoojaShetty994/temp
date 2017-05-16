@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar color="amazon1">
+    <ion-title>user management</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+            <ion-label stacked>User Name:</ion-label>
+            <ion-input type="text" [(ngModel)]="name" value="name"></ion-input>
+  </ion-item>
+  <ion-item>
+            <ion-label stacked>designation:</ion-label>
+            <ion-input type="text" [(ngModel)]="design" value="design"></ion-input>
+  </ion-item>
+  <ion-item>
+            <ion-label stacked>Password:</ion-label>
+            <ion-input type="password" [(ngModel)]="password" value="password"></ion-input>
+  </ion-item>
+<div id="log" *ngIf="isvalid">Invalid user</div>
+<!-- <ion-item>
+            <ion-label stacked>Latitude :</ion-label>
+            <ion-input type="number" [(ngModel)]="lat" value="lat"></ion-input>
+</ion-item>
+  <ion-item>
+            <ion-label stacked>Longitude :</ion-label>
+            <ion-input type="number" [(ngModel)]="long" value="long"></ion-input>
+  </ion-item>
+  <ion-item>
+            <ion-label stacked>Radius :</ion-label>
+            <ion-input type="number" [(ngModel)]="radius" value="radius"></ion-input>
+  </ion-item>-->
+
+
+<!-- <div id="map" style="height: 600px"></div>
+  <button ion-button block tappable (click)="takegeo()">Show map</button>
+
+-->
+ <button ion-button block tappable (click)="create()" >create</button>
+
+
+</ion-content>
